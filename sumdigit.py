@@ -1,14 +1,11 @@
+#Write a program to find the sum of digits of a number.
 n=int(input("enter the number:"))
-num=n
 
-r=0
-while n!=0:
-    r=r+n%10
-    r=r*10
+last_digit=0
+sum=0
+while(n!=0):
+    last_digit=n%10
+    sum+=last_digit
     n=n//10
-r=r//10
 
-if num==r:
-    print(f"palindrome number")
-else:
-    print(f"not palindrome")
+print(f"{sum}")
